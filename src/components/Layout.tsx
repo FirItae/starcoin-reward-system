@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from "react-router";
-import { Star, Coins, Gift, Settings, CalendarDays } from "lucide-react";
+import { Star, Coins, Gift, Settings, CalendarDays, Database } from "lucide-react";
 
 export function Layout() {
   const location = useLocation();
@@ -74,6 +74,17 @@ export function Layout() {
               >
                 <Settings className="w-5 h-5" />
                 <span>Управление призами</span>
+              </Link>
+              <Link
+                to="/data"
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
+                  isActive("/data")
+                    ? "bg-purple-100 text-purple-700"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                <Database className="w-5 h-5" />
+                <span>Данные</span>
               </Link>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { Schedule } from "../components/Schedule";
 import { StarCoins } from "../components/StarCoins";
 import { PrizesShop } from "../components/PrizesShop";
 import { ManagePrizes } from "../components/ManagePrizes";
+import { DataManagement } from "../components/DataManagement";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { path: "starcoins", Component: StarCoins },
       { path: "shop", Component: PrizesShop },
       { path: "manage-prizes", Component: ManagePrizes },
+      { path: "data", Component: DataManagement },
     ],
   },
 ]);
